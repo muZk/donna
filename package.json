@@ -1,5 +1,5 @@
 {
-  "name": "donna",
+  "name": "donna-bot",
   "version": "0.1.0",
   "description": "Automation tool for Chilean services like https://sii.cl and https://previred.com",
   "main": "index.js",
