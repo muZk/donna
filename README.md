@@ -16,7 +16,7 @@ Behind scenes it uses [puppeteer](https://github.com/GoogleChrome/puppeteer) for
 # Instalation
 
 ```
-$ npm install -g donna
+$ npm install -g donna-bot
 ```
 
 # Commands
