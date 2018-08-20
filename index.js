@@ -2,7 +2,7 @@
 
 const program = require('commander')
 const { prompt } = require('inquirer')
-const keyMirror = require('keyMirror')
+const keyMirror = require('keymirror')
 const version = require('./package.json').version
 
 const SERVICES = keyMirror({
