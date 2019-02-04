@@ -42,3 +42,25 @@ Available services:
 - SII: [F29](https://www.sii.cl/IVA2000/ayuda.htm) for independent workers.
 - Previred: [Contributions](https://www.previred.com/web/previred/) (AFP, Salud)
 - Itaú: [CAE](https://www.zonaestudiantes.cl/) (student loan)
+
+### Optional arguments
+
+**Service**:
+
+If you don't want to manually select the service you want to pay, you can use the `service` argument.
+
+For example:
+
+```
+$ donna pay -s sii
+```
+
+Available services: `sii`, `previred`, `itau`
+
+**RUT**
+
+*rut* can be specified with `RUT` environment variable.
+
+**Password**
+
+The service password can be specified with `SERVICE_PASSWORD`, where service is `SII`, `PREVIRED` or `ITAU`.
