@@ -9,7 +9,8 @@
     "donna": "./index.js"
   },
   "scripts": {
-    "release": "standard-version"
+    "release": "standard-version",
+    "test": "standard"
   },
   "dependencies": {
     "bluebird": "^3.5.1",
