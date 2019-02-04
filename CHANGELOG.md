@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.3.0"></a>
+# [0.3.0](https://github.com/muZk/donna/compare/v0.2.2...v0.3.0) (2019-02-04)
+
+
+### Features
+
+* adds support to ENV variables for rut & pwd and adds optional service option ([3211c86](https://github.com/muZk/donna/commit/3211c86))
+
+
+
 <a name="0.2.2"></a>
 ## [0.2.2](https://github.com/muZk/donna/compare/v0.2.1...v0.2.2) (2018-08-20)
 
