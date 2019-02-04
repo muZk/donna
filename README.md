@@ -1,7 +1,9 @@
 # donna
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
-[![dependencies Status](https://david-dm.org/muZk/donna/status.svg)](https://david-dm.org/muZk/pinericosas)
+[![Build Status](https://travis-ci.org/muZk/donna.svg?branch=master)](https://travis-ci.org/muZk/donna)
+[![dependencies Status](https://david-dm.org/muZk/donna/status.svg)](https://david-dm.org/muZk/donna)
+[![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 # About
 
