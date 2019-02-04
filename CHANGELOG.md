@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.4.0"></a>
+# [0.4.0](https://github.com/muZk/donna/compare/v0.3.0...v0.4.0) (2019-02-04)
+
+
+### Features
+
+* updated travis with deploy configuration ([b43573b](https://github.com/muZk/donna/commit/b43573b))
+
+
+
 <a name="0.3.0"></a>
 # [0.3.0](https://github.com/muZk/donna/compare/v0.2.2...v0.3.0) (2019-02-04)
 
