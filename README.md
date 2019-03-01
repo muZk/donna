@@ -5,25 +5,25 @@
 [![dependencies Status](https://david-dm.org/muZk/donna/status.svg)](https://david-dm.org/muZk/donna)
 [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
-# About
+## About
 
 Donna is a command line tool built to automate 🇨🇱 Chilean boring tasks such as college loans, taxes and contributions.
 
-# How it works
+## How it works
 
 Donna starts session in the service you want to pay and leaves you right in the final step. What follows for now is not automated.
 
 Behind scenes it uses [puppeteer](https://github.com/GoogleChrome/puppeteer) for the browser automation tool.
 
-# Instalation
+## Instalation
 
 ```
 $ npm install -g donna-bot
 ```
 
-# Commands
+## Commands
 
-## pay
+### pay
 
 Want to pay something? Donna will leave you right in the final step (payment).
 
@@ -45,7 +45,7 @@ Available services:
 - Previred: [Contributions](https://www.previred.com/web/previred/) (AFP, Salud)
 - Itaú: [CAE](https://www.zonaestudiantes.cl/) (student loan)
 
-### Optional arguments
+#### Optional arguments
 
 **Service**:
 
@@ -61,8 +61,30 @@ Available services: `sii`, `previred`, `itau`
 
 **RUT**
 
-*rut* can be specified with `RUT` environment variable.
+_rut_ can be specified with `RUT` environment variable.
 
 **Password**
 
-The service password can be specified with `SERVICE_PASSWORD`, where service is `SII`, `PREVIRED` or `ITAU`.
+The service password can be specified with an environment variable:
+
+- SII_PASSWORD
+- PREVIRED_PASSWORD
+- ITAU_PASSWORD
+
+## Available Services
+
+### SII
+
+You can use this bot to **automatically pay** your SII contributions. The only "inconvenient" is that you MUST use [**PEC** payment](http://www.sii.cl/portal_renta/como_pagar/pagar_declaracion_internet.htm#3).
+
+How you can pay with **PEC**? You can read more [here](https://medium.com/p/9c63604d8e86). Then just run the `donna pay -s sii` command with your SII credentials or just use environment variables.
+
+### CAE (Itaú)
+
+This is not fully automated. After running `donna pay -s itau`, you'll need to continue in the payment step (which is _Servipag_):
+
+![servipag](https://user-images.githubusercontent.com/1679496/53665737-0a07ae00-3c4b-11e9-873a-ffc250db83e6.png)
+
+### Previred
+
+Not working at the moment 😂 but it wasn't fully automated (yet).
