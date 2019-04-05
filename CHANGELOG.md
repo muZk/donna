@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.5.1"></a>
+## [0.5.1](https://github.com/muZk/donna/compare/v0.5.0...v0.5.1) (2019-04-05)
+
+
+### Bug Fixes
+
+* disable sandbox for f29 sii command ([1b22a39](https://github.com/muZk/donna/commit/1b22a39))
+
+
+
 <a name="0.5.0"></a>
 # [0.5.0](https://github.com/muZk/donna/compare/v0.4.1...v0.5.0) (2019-03-01)
 
