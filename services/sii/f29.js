@@ -8,7 +8,7 @@ const BANK_IMG =
   '/html/body/div[6]/div/table/tbody/tr[2]/td[2]/div/table/tbody/tr/td/table/tbody/tr[7]/td/div/div[3]/div/img'
 
 async function task (rut, password) {
-  const browser = await puppeteer.launch({ headless: true })
+  const browser = await puppeteer.launch({ headless: true, args: ['--no-sandbox', '--disable-setuid-sandbox'] })
   const page = await browser.newPage()
   await page.goto(LOGIN)
   await page.type('#rutcntr', rut)
