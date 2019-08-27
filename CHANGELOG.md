@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.5.2"></a>
+## [0.5.2](https://github.com/muZk/donna/compare/v0.5.1...v0.5.2) (2019-08-27)
+
+
+### Bug Fixes
+
+* update outdated dependencies ([50aac58](https://github.com/muZk/donna/commit/50aac58))
+
+
+
 <a name="0.5.1"></a>
 ## [0.5.1](https://github.com/muZk/donna/compare/v0.5.0...v0.5.1) (2019-04-05)
 
