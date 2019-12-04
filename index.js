@@ -7,12 +7,12 @@ const version = require('./package.json').version
 
 const SERVICES = keyMirror({
   sii: null,
-  previred: null,
+  previred: null
 })
 
 const services = {
   [SERVICES.sii]: require('./services/sii/f29'),
-  [SERVICES.previred]: require('./services/previred/contributions'),
+  [SERVICES.previred]: require('./services/previred/contributions')
 }
 
 program.version(version, '-v, --version')
@@ -29,7 +29,7 @@ program
         message: '¿Qué servicio deseas pagar?',
         choices: [
           { name: 'F29 - SII', value: SERVICES.sii },
-          { name: 'Previsión - Previred', value: SERVICES.previred },
+          { name: 'Previsión - Previred', value: SERVICES.previred }
         ]
       },
       rut: {
