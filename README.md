@@ -43,7 +43,6 @@ Available services:
 
 - SII: [F29](https://www.sii.cl/IVA2000/ayuda.htm) for independent workers.
 - Previred: [Contributions](https://www.previred.com/web/previred/) (AFP, Salud)
-- Itaú: [CAE](https://www.zonaestudiantes.cl/) (student loan)
 
 #### Optional arguments
 
@@ -57,7 +56,7 @@ For example:
 $ donna pay -s sii
 ```
 
-Available services: `sii`, `previred`, `itau`
+Available services: `sii` and `previred`
 
 **RUT**
 
@@ -69,7 +68,6 @@ The service password can be specified with an environment variable:
 
 - SII_PASSWORD
 - PREVIRED_PASSWORD
-- ITAU_PASSWORD
 
 ## Available Services
 
@@ -78,12 +76,6 @@ The service password can be specified with an environment variable:
 You can use this bot to **automatically pay** your SII contributions. The only "inconvenient" is that you MUST use [**PEC** payment](http://www.sii.cl/portal_renta/como_pagar/pagar_declaracion_internet.htm#3).
 
 How you can pay with **PEC**? You can read more [here](https://medium.com/p/9c63604d8e86). Then just run the `donna pay -s sii` command with your SII credentials or just use environment variables.
-
-### CAE (Itaú)
-
-This is not fully automated. After running `donna pay -s itau`, you'll need to continue in the payment step (which is _Servipag_):
-
-![servipag](https://user-images.githubusercontent.com/1679496/53665737-0a07ae00-3c4b-11e9-873a-ffc250db83e6.png)
 
 ### Previred
 
