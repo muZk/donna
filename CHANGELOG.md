@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.6.2"></a>
+## [0.6.2](https://github.com/muZk/donna/compare/v0.6.1...v0.6.2) (2020-05-18)
+
+
+### Bug Fixes
+
+* click PEC payment radio button + logging ([bd76ade](https://github.com/muZk/donna/commit/bd76ade))
+* dismiss the new modal shown before payment 😢 ([#8](https://github.com/muZk/donna/issues/8)) ([60c7968](https://github.com/muZk/donna/commit/60c7968))
+
+
+
 <a name="0.6.1"></a>
 ## [0.6.1](https://github.com/muZk/donna/compare/v0.6.0...v0.6.1) (2019-12-04)
 

@@ -1,6 +1,6 @@
 {
   "name": "donna-bot",
-  "version": "0.6.1",
+  "version": "0.6.2",
   "description": "Automation tool for Chilean services like https://sii.cl and https://previred.com",
   "main": "index.js",
   "author": "Nicolás Gómez Espejo",
