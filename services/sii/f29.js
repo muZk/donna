@@ -35,7 +35,6 @@ async function task (rut, password) {
   const closeButton = await page.$('.gwt-DialogBox button')
 
   if (closeButton) {
-    console.log(closeButton);
     await closeButton.click()
   }
 
