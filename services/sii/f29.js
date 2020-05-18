@@ -8,7 +8,7 @@ const BANK_IMG =
   '/html/body/div[6]/div/table/tbody/tr[2]/td[2]/div/table/tbody/tr/td/table/tbody/tr[7]/td/div/div[3]/div/img'
 
 async function task (rut, password) {
-  const browser = await puppeteer.launch({ headless: false, args: ['--no-sandbox', '--disable-setuid-sandbox'] })
+  const browser = await puppeteer.launch({ headless: true, args: ['--no-sandbox', '--disable-setuid-sandbox'] })
   const page = await browser.newPage()
   console.info('Logging in SII...')
   await page.goto(LOGIN)
@@ -31,19 +31,26 @@ async function task (rut, password) {
     }
   )
 
+  // Dismiss dialog if present
+  const closeButton = await page.$('.gwt-DialogBox button')
+
+  if (closeButton) {
+    await closeButton.click()
+  }
+
   // I had to add this timeout because clicking the button was not working...
   await Promise.delay(3000)
 
   console.log('Clicking "Enviar declaración" button...')
   page.click('button.gwt-Button.imagenBtnValidar:not([disabled])')
 
-  console.log('Waiting for "#gwt-uid-18" button...')
+  console.log('Waiting for "Pago Convenio en Cuenta Corriente (PEC)"')
   await Promise.delay(1000)
-  await page.waitForSelector('#gwt-uid-18', { visible: true })
+  await page.waitForSelector('#gwt-uid-22', { visible: true })
 
-  console.log('Clicking "#gwt-uid-18" button...')
+  console.log('Selecting "Pago Convenio en Cuenta Corriente (PEC)"')
   await Promise.delay(3000)
-  page.click('#gwt-uid-18')
+  page.click('#gwt-uid-22')
 
   console.log('Selecting payment mode...')
 
@@ -55,7 +62,8 @@ async function task (rut, password) {
   // 1 = pago inmediato, 0 = pago al vencimiento
   await page.select('.gwt-ListBox:first-child', '1')
 
-  console.log('Waiting for "Continuar" button...')
+  console.log('Looking for "Continuar" button...')
+
   const continueButton = await page.$x(
     "//button[contains(text(), 'Continuar')]"
   )
